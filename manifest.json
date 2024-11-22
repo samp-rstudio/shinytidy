@@ -24,6 +24,19 @@
         "NeedsCompilation": "no"
       }
     },
+    "cpp11": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "cpp11",
+        "Type": "package",
+        "Version": "0.5.0",
+        "Depends": "R (>= 3.6.0)",
+        "Suggests": "bench, brio, callr, cli, covr, decor, desc, ggplot2, glue,\nknitr, lobstr, mockery, progress, rmarkdown, scales, Rcpp,\ntestthat (>= 3.2.0), tibble, utils, vctrs, withr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
     "broom": {
       "Source": "CRAN",
       "Repository": "http://rspm/default/latest",
