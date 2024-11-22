@@ -1053,7 +1053,7 @@
       "description": {
         "Package": "lubridate",
         "Type": "package",
-        "Version": "1.9.3",
+        "Version": "1.9.2",
         "Depends": "methods, R (>= 3.2)",
         "Imports": "generics, timechange (>= 0.1.1)",
         "Suggests": "covr, knitr, rmarkdown, testthat (>= 2.1.0), vctrs (>= 0.5.0)",
