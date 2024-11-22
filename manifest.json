@@ -1,0 +1,1223 @@
+{
+  "version": 1,
+  "locale": "C",
+  "platform": "4.4.1",
+  "metadata": {
+    "appmode": "shiny",
+    "primary_rmd": null,
+    "primary_html": null,
+    "content_category": null,
+    "has_parameters": false
+  },
+  "packages": {
+    "tidyverse": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "tidyverse",
+        "Type": "package",
+        "Version": "2.0.0",
+        "Depends": "R (>= 3.3)",
+        "Imports": "broom (>= 1.0.3), conflicted (>= 1.2.0), cli (>= 3.6.0),\ndbplyr (>= 2.3.0), dplyr (>= 1.1.0), dtplyr (>= 1.2.2), forcats\n(>= 1.0.0), ggplot2 (>= 3.4.1), googledrive (>= 2.0.0),\ngooglesheets4 (>= 1.0.1), haven (>= 2.5.1), hms (>= 1.1.2),\nhttr (>= 1.4.4), jsonlite (>= 1.8.4), lubridate (>= 1.9.2),\nmagrittr (>= 2.0.3), modelr (>= 0.1.10), pillar (>= 1.8.1),\npurrr (>= 1.0.1), ragg (>= 1.2.5), readr (>= 2.1.4), readxl (>=\n1.4.2), reprex (>= 2.0.2), rlang (>= 1.0.6), rstudioapi (>=\n0.14), rvest (>= 1.0.3), stringr (>= 1.5.0), tibble (>= 3.1.8),\ntidyr (>= 1.3.0), xml2 (>= 1.3.3)",
+        "Suggests": "covr (>= 3.6.1), feather (>= 0.3.5), glue (>= 1.6.2), mockr\n(>= 0.2.0), knitr (>= 1.41), rmarkdown (>= 2.20), testthat (>=\n3.1.6)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "broom": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "broom",
+        "Type": "package",
+        "Version": "1.0.7",
+        "Depends": "R (>= 3.5)",
+        "Imports": "backports, dplyr (>= 1.0.0), generics (>= 0.0.2), glue,\nlifecycle, purrr, rlang, stringr, tibble (>= 3.0.0), tidyr (>=\n1.0.0)",
+        "Suggests": "AER, AUC, bbmle, betareg (>= 3.2-1), biglm, binGroup, boot,\nbtergm (>= 1.10.6), car (>= 3.1-2), carData, caret, cluster,\ncmprsk, coda, covr, drc, e1071, emmeans, epiR, ergm (>=\n3.10.4), fixest (>= 0.9.0), gam (>= 1.15), gee, geepack,\nggplot2, glmnet, glmnetUtils, gmm, Hmisc, irlba, interp,\njoineRML, Kendall, knitr, ks, Lahman, lavaan (>= 0.6.18),\nleaps, lfe, lm.beta, lme4, lmodel2, lmtest (>= 0.9.38),\nlsmeans, maps, margins, MASS, mclust, mediation, metafor, mfx,\nmgcv, mlogit, modeldata, modeltests (>= 0.1.6), muhaz,\nmultcomp, network, nnet, orcutt (>= 2.2), ordinal, plm, poLCA,\npsych, quantreg, rmarkdown, robust, robustbase, rsample,\nsandwich, spdep (>= 1.1), spatialreg, speedglm, spelling,\nsurvey, survival (>= 3.6-4), systemfit, testthat (>= 2.1.0),\ntseries, vars, zoo",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "backports": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "backports",
+        "Type": "package",
+        "Version": "1.5.0",
+        "Depends": "R (>= 3.0.0)",
+        "License": "GPL-2 | GPL-3",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "dplyr": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "dplyr",
+        "Type": "package",
+        "Version": "1.1.4",
+        "Depends": "R (>= 3.5.0)",
+        "Imports": "cli (>= 3.4.0), generics, glue (>= 1.3.2), lifecycle (>=\n1.0.3), magrittr (>= 1.5), methods, pillar (>= 1.9.0), R6,\nrlang (>= 1.1.0), tibble (>= 3.2.0), tidyselect (>= 1.2.0),\nutils, vctrs (>= 0.6.4)",
+        "Suggests": "bench, broom, callr, covr, DBI, dbplyr (>= 2.2.1), ggplot2,\nknitr, Lahman, lobstr, microbenchmark, nycflights13, purrr,\nrmarkdown, RMySQL, RPostgreSQL, RSQLite, stringi (>= 1.7.6),\ntestthat (>= 3.1.5), tidyr (>= 1.3.0), withr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "cli": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "cli",
+        "Type": "package",
+        "Version": "3.6.3",
+        "Depends": "R (>= 3.4)",
+        "Imports": "utils",
+        "Suggests": "callr, covr, crayon, digest, glue (>= 1.6.0), grDevices,\nhtmltools, htmlwidgets, knitr, methods, mockery, processx, ps\n(>= 1.3.4.9000), rlang (>= 1.0.2.9003), rmarkdown, rprojroot,\nrstudioapi, testthat, tibble, whoami, withr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "generics": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "generics",
+        "Type": "package",
+        "Version": "0.1.3",
+        "Depends": "R (>= 3.2)",
+        "Imports": "methods",
+        "Suggests": "covr, pkgload, testthat (>= 3.0.0), tibble, withr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "glue": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "glue",
+        "Type": "package",
+        "Version": "1.8.0",
+        "Depends": "R (>= 3.6)",
+        "Imports": "methods",
+        "Suggests": "crayon, DBI (>= 1.2.0), dplyr, knitr, magrittr, rlang,\nrmarkdown, RSQLite, testthat (>= 3.2.0), vctrs (>= 0.3.0),\nwaldo (>= 0.5.3), withr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "lifecycle": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "lifecycle",
+        "Type": "package",
+        "Version": "1.0.4",
+        "Depends": "R (>= 3.6)",
+        "Imports": "cli (>= 3.4.0), glue, rlang (>= 1.1.0)",
+        "Suggests": "covr, crayon, knitr, lintr, rmarkdown, testthat (>= 3.0.1),\ntibble, tidyverse, tools, vctrs, withr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "rlang": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "rlang",
+        "Type": "package",
+        "Version": "1.1.4",
+        "Depends": "R (>= 3.5.0)",
+        "Imports": "utils",
+        "Suggests": "cli (>= 3.1.0), covr, crayon, fs, glue, knitr, magrittr,\nmethods, pillar, rmarkdown, stats, testthat (>= 3.0.0), tibble,\nusethis, vctrs (>= 0.2.3), withr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "magrittr": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "magrittr",
+        "Type": "package",
+        "Version": "2.0.3",
+        "Depends": "R (>= 3.4.0)",
+        "Suggests": "covr, knitr, rlang, rmarkdown, testthat",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "pillar": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "pillar",
+        "Type": "package",
+        "Version": "1.9.0",
+        "Imports": "cli (>= 2.3.0), fansi, glue, lifecycle, rlang (>= 1.0.2), utf8\n(>= 1.1.0), utils, vctrs (>= 0.5.0)",
+        "Suggests": "bit64, DBI, debugme, DiagrammeR, dplyr, formattable, ggplot2,\nknitr, lubridate, nanotime, nycflights13, palmerpenguins,\nrmarkdown, scales, stringi, survival, testthat (>= 3.1.1),\ntibble, units (>= 0.7.2), vdiffr, withr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "fansi": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "fansi",
+        "Type": "package",
+        "Version": "1.0.6",
+        "Depends": "R (>= 3.1.0)",
+        "Imports": "grDevices, utils",
+        "Suggests": "unitizer, knitr, rmarkdown",
+        "License": "GPL-2 | GPL-3",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "utf8\n(>=": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "utf8\n(>=",
+        "Type": "package"
+      }
+    },
+    "vctrs": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "vctrs",
+        "Type": "package",
+        "Version": "0.6.5",
+        "Depends": "R (>= 3.5.0)",
+        "Imports": "cli (>= 3.4.0), glue, lifecycle (>= 1.0.3), rlang (>= 1.1.0)",
+        "Suggests": "bit64, covr, crayon, dplyr (>= 0.8.5), generics, knitr,\npillar (>= 1.4.4), pkgdown (>= 2.0.1), rmarkdown, testthat (>=\n3.0.0), tibble (>= 3.1.3), waldo (>= 0.2.0), withr, xml2,\nzeallot",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "R6,\nrlang": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "R6,\nrlang",
+        "Type": "package"
+      }
+    },
+    "tibble": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "tibble",
+        "Type": "package",
+        "Version": "3.2.1",
+        "Depends": "R (>= 3.4.0)",
+        "Imports": "fansi (>= 0.4.0), lifecycle (>= 1.0.0), magrittr, methods,\npillar (>= 1.8.1), pkgconfig, rlang (>= 1.0.2), utils, vctrs\n(>= 0.4.2)",
+        "Suggests": "bench, bit64, blob, brio, callr, cli, covr, crayon (>=\n1.3.4), DiagrammeR, dplyr, evaluate, formattable, ggplot2,\nhere, hms, htmltools, knitr, lubridate, mockr, nycflights13,\npkgbuild, pkgload, purrr, rmarkdown, stringi, testthat (>=\n3.0.2), tidyr, withr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "methods,\npillar": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "methods,\npillar",
+        "Type": "package"
+      }
+    },
+    "pkgconfig": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "pkgconfig",
+        "Type": "package",
+        "Version": "2.0.3",
+        "Imports": "utils",
+        "Suggests": "covr, testthat, disposables (>= 1.0.3)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "vctrs\n(>=": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "vctrs\n(>=",
+        "Type": "package"
+      }
+    },
+    "tidyselect": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "tidyselect",
+        "Type": "package",
+        "Version": "1.2.1",
+        "Depends": "R (>= 3.4)",
+        "Imports": "cli (>= 3.3.0), glue (>= 1.3.0), lifecycle (>= 1.0.3), rlang\n(>= 1.0.4), vctrs (>= 0.5.2), withr",
+        "Suggests": "covr, crayon, dplyr, knitr, magrittr, rmarkdown, stringr,\ntestthat (>= 3.1.1), tibble (>= 2.1.3)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "rlang\n(>=": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "rlang\n(>=",
+        "Type": "package"
+      }
+    },
+    "withr": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "withr",
+        "Type": "package",
+        "Version": "3.0.2",
+        "Depends": "R (>= 3.6.0)",
+        "Imports": "graphics, grDevices",
+        "Suggests": "callr, DBI, knitr, methods, rlang, rmarkdown (>= 2.12),\nRSQLite, testthat (>= 3.0.0)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "glue,\nlifecycle": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "glue,\nlifecycle",
+        "Type": "package"
+      }
+    },
+    "purrr": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "purrr",
+        "Type": "package",
+        "Version": "1.0.2",
+        "Depends": "R (>= 3.5.0)",
+        "Imports": "cli (>= 3.6.1), lifecycle (>= 1.0.3), magrittr (>= 1.5.0),\nrlang (>= 1.1.1), vctrs (>= 0.6.3)",
+        "Suggests": "covr, dplyr (>= 0.7.8), httr, knitr, lubridate, rmarkdown,\ntestthat (>= 3.0.0), tibble, tidyselect",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "stringr": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "stringr",
+        "Type": "package",
+        "Version": "1.5.1",
+        "Depends": "R (>= 3.6)",
+        "Imports": "cli, glue (>= 1.6.1), lifecycle (>= 1.0.3), magrittr, rlang\n(>= 1.0.0), stringi (>= 1.5.3), vctrs (>= 0.4.0)",
+        "Suggests": "covr, dplyr, gt, htmltools, htmlwidgets, knitr, rmarkdown,\ntestthat (>= 3.0.0), tibble",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "stringi": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "stringi",
+        "Type": "package",
+        "Version": "1.8.4",
+        "Depends": "R (>= 3.4)",
+        "Imports": "tools, utils, stats",
+        "License": "file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "tidyr": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "tidyr",
+        "Type": "package",
+        "Version": "1.3.1",
+        "Depends": "R (>= 3.6)",
+        "Imports": "cli (>= 3.4.1), dplyr (>= 1.0.10), glue, lifecycle (>= 1.0.3),\nmagrittr, purrr (>= 1.0.1), rlang (>= 1.1.1), stringr (>=\n1.5.0), tibble (>= 2.1.1), tidyselect (>= 1.2.0), utils, vctrs\n(>= 0.5.2)",
+        "Suggests": "covr, data.table, knitr, readr, repurrrsive (>= 1.1.0),\nrmarkdown, testthat (>= 3.0.0)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "conflicted": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "conflicted",
+        "Type": "package",
+        "Version": "1.2.0",
+        "Depends": "R (>= 3.2)",
+        "Imports": "cli (>= 3.4.0), memoise, rlang (>= 1.0.0)",
+        "Suggests": "callr, covr, dplyr, Matrix, methods, pkgload, testthat (>=\n3.0.0), withr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "memoise": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "memoise",
+        "Type": "package",
+        "Version": "2.0.1",
+        "Imports": "rlang (>= 0.4.10), cachem",
+        "Suggests": "digest, aws.s3, covr, googleAuthR, googleCloudStorageR, httr,\ntestthat",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "cachem": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "cachem",
+        "Type": "package",
+        "Version": "1.1.0",
+        "Imports": "rlang, fastmap (>= 1.2.0)",
+        "Suggests": "testthat",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "fastmap": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "fastmap",
+        "Type": "package",
+        "Version": "1.2.0",
+        "Suggests": "testthat (>= 2.1.1)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "dtplyr": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "dtplyr",
+        "Type": "package",
+        "Version": "1.3.1",
+        "Depends": "R (>= 3.3)",
+        "Imports": "cli (>= 3.4.0), data.table (>= 1.13.0), dplyr (>= 1.1.0),\nglue, lifecycle, rlang (>= 1.0.4), tibble, tidyselect (>=\n1.2.0), vctrs (>= 0.4.1)",
+        "Suggests": "bench, covr, knitr, rmarkdown, testthat (>= 3.1.2), tidyr (>=\n1.1.0), waldo (>= 0.3.1)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "data.table": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "data.table",
+        "Type": "package",
+        "Version": "1.16.2",
+        "Depends": "R (>= 3.3.0)",
+        "Imports": "methods",
+        "Suggests": "bit64 (>= 4.0.0), bit (>= 4.0.4), R.utils, xts, zoo (>=\n1.8-1), yaml, knitr, markdown",
+        "License": "MPL-2.0 | file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "forcats\n(>=": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "forcats\n(>=",
+        "Type": "package"
+      }
+    },
+    "ggplot2": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "ggplot2",
+        "Type": "package",
+        "Version": "3.5.1",
+        "Depends": "R (>= 3.5)",
+        "Imports": "cli, glue, grDevices, grid, gtable (>= 0.1.1), isoband,\nlifecycle (> 1.0.1), MASS, mgcv, rlang (>= 1.1.0), scales (>=\n1.3.0), stats, tibble, vctrs (>= 0.6.0), withr (>= 2.5.0)",
+        "Suggests": "covr, dplyr, ggplot2movies, hexbin, Hmisc, knitr, mapproj,\nmaps, multcomp, munsell, nlme, profvis, quantreg, ragg (>=\n1.2.6), RColorBrewer, rmarkdown, rpart, sf (>= 0.7-3), svglite\n(>= 2.1.2), testthat (>= 3.1.2), vdiffr (>= 1.0.6), xml2",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "gtable": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "gtable",
+        "Type": "package",
+        "Version": "0.3.6",
+        "Depends": "R (>= 4.0)",
+        "Imports": "cli, glue, grid, lifecycle, rlang (>= 1.1.0), stats",
+        "Suggests": "covr, ggplot2, knitr, profvis, rmarkdown, testthat (>= 3.0.0)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "isoband,\nlifecycle": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "isoband,\nlifecycle",
+        "Type": "package"
+      }
+    },
+    "MASS": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "MASS",
+        "Type": "package",
+        "Version": "7.3-61",
+        "Depends": "R (>= 4.4.0), grDevices, graphics, stats, utils",
+        "Imports": "methods",
+        "Suggests": "lattice, nlme, nnet, survival",
+        "License": "GPL-2 | GPL-3",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "mgcv": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "mgcv",
+        "Type": "package",
+        "Version": "1.9-1",
+        "Depends": "R (>= 3.6.0), nlme (>= 3.1-64)",
+        "Imports": "methods, stats, graphics, Matrix, splines, utils",
+        "Suggests": "parallel, survival, MASS",
+        "License": "GPL (>= 2)",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "nlme": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "nlme",
+        "Type": "package",
+        "Version": "3.1-166",
+        "Depends": "R (>= 3.6.0)",
+        "Imports": "graphics, stats, utils, lattice",
+        "Suggests": "MASS, SASmixed",
+        "License": "GPL (>= 2)",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "lattice": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "lattice",
+        "Type": "package",
+        "Version": "0.22-6",
+        "Depends": "R (>= 4.0.0)",
+        "Imports": "grid, grDevices, graphics, stats, utils",
+        "Suggests": "KernSmooth, MASS, latticeExtra, colorspace",
+        "License": "GPL (>= 2)",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "Matrix": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "Matrix",
+        "Type": "package",
+        "Version": "1.7-1",
+        "Depends": "R (>= 4.4.0), methods",
+        "Imports": "grDevices, graphics, grid, lattice, stats, utils",
+        "Suggests": "MASS, datasets, sfsmisc, tools",
+        "License": "GPL (>= 2) | file LICENCE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "scales": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "scales",
+        "Type": "package",
+        "Version": "1.3.0",
+        "Depends": "R (>= 3.6)",
+        "Imports": "cli, farver (>= 2.0.3), glue, labeling, lifecycle, munsell (>=\n0.5), R6, RColorBrewer, rlang (>= 1.0.0), viridisLite",
+        "Suggests": "bit64, covr, dichromat, ggplot2, hms (>= 0.5.0), stringi,\ntestthat (>= 3.0.0)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "farver": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "farver",
+        "Type": "package",
+        "Version": "2.1.2",
+        "Suggests": "covr, testthat (>= 3.0.0)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "labeling": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "labeling",
+        "Type": "package",
+        "Version": "0.4.3",
+        "Imports": "stats, graphics",
+        "License": "MIT + file LICENSE | Unlimited",
+        "NeedsCompilation": "no"
+      }
+    },
+    "munsell": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "munsell",
+        "Type": "package",
+        "Version": "0.5.1",
+        "Imports": "colorspace, methods",
+        "Suggests": "ggplot2, testthat",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "colorspace": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "colorspace",
+        "Type": "package",
+        "Version": "2.1-1",
+        "Depends": "R (>= 3.0.0), methods",
+        "Imports": "graphics, grDevices, stats",
+        "Suggests": "datasets, utils, KernSmooth, MASS, kernlab, mvtnorm, vcd,\ntcltk, shiny, shinyjs, ggplot2, dplyr, scales, grid, png, jpeg,\nknitr, rmarkdown, RColorBrewer, rcartocolor, scico, viridis,\nwesanderson",
+        "License": "BSD_3_clause + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "R6": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "R6",
+        "Type": "package",
+        "Version": "2.5.1",
+        "Depends": "R (>= 3.0)",
+        "Suggests": "testthat, pryr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "RColorBrewer": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "RColorBrewer",
+        "Type": "package",
+        "Version": "1.1-3",
+        "Depends": "R (>= 2.0.0)",
+        "License": "Apache License 2.0",
+        "NeedsCompilation": "no"
+      }
+    },
+    "viridisLite": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "viridisLite",
+        "Type": "package",
+        "Version": "0.4.2",
+        "Depends": "R (>= 2.10)",
+        "Suggests": "hexbin (>= 1.27.0), ggplot2 (>= 1.0.1), testthat, covr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "googledrive": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "googledrive",
+        "Type": "package",
+        "Version": "2.1.1",
+        "Depends": "R (>= 3.6)",
+        "Imports": "cli (>= 3.0.0), gargle (>= 1.5.0), glue (>= 1.4.2), httr,\njsonlite, lifecycle, magrittr, pillar (>= 1.9.0), purrr (>=\n1.0.1), rlang (>= 1.0.2), tibble (>= 2.0.0), utils, uuid, vctrs\n(>= 0.3.0), withr",
+        "Suggests": "curl, dplyr (>= 1.0.0), knitr, mockr, rmarkdown, spelling,\ntestthat (>= 3.1.3)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "gargle": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "gargle",
+        "Type": "package",
+        "Version": "1.5.2",
+        "Depends": "R (>= 3.6)",
+        "Imports": "cli (>= 3.0.1), fs (>= 1.3.1), glue (>= 1.3.0), httr (>=\n1.4.5), jsonlite, lifecycle, openssl, rappdirs, rlang (>=\n1.1.0), stats, utils, withr",
+        "Suggests": "aws.ec2metadata, aws.signature, covr, httpuv, knitr,\nrmarkdown, sodium, spelling, testthat (>= 3.1.7)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "fs": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "fs",
+        "Type": "package",
+        "Version": "1.6.5",
+        "Depends": "R (>= 3.6)",
+        "Imports": "methods",
+        "Suggests": "covr, crayon, knitr, pillar (>= 1.0.0), rmarkdown, spelling,\ntestthat (>= 3.0.0), tibble (>= 1.1.0), vctrs (>= 0.3.0), withr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "httr": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "httr",
+        "Type": "package",
+        "Version": "1.4.7",
+        "Depends": "R (>= 3.5)",
+        "Imports": "curl (>= 5.0.2), jsonlite, mime, openssl (>= 0.8), R6",
+        "Suggests": "covr, httpuv, jpeg, knitr, png, readr, rmarkdown, testthat\n(>= 0.8.0), xml2",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "curl": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "curl",
+        "Type": "package",
+        "Version": "6.0.1",
+        "Depends": "R (>= 3.0.0)",
+        "Suggests": "spelling, testthat (>= 1.0.0), knitr, jsonlite, later,\nrmarkdown, httpuv (>= 1.4.4), webutils",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "jsonlite": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "jsonlite",
+        "Type": "package",
+        "Version": "1.8.9",
+        "Depends": "methods",
+        "Suggests": "httr, vctrs, testthat, knitr, rmarkdown, R.rsp, sf",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "mime": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "mime",
+        "Type": "package",
+        "Version": "0.12",
+        "Imports": "tools",
+        "License": "GPL",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "openssl": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "openssl",
+        "Type": "package",
+        "Version": "2.2.2",
+        "Imports": "askpass",
+        "Suggests": "curl, testthat (>= 2.1.0), digest, knitr, rmarkdown,\njsonlite, jose, sodium",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "askpass": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "askpass",
+        "Type": "package",
+        "Version": "1.2.1",
+        "Imports": "sys (>= 2.1)",
+        "Suggests": "testthat",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "sys": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "sys",
+        "Type": "package",
+        "Version": "3.4.3",
+        "Suggests": "unix (>= 1.4), spelling, testthat",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "rappdirs": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "rappdirs",
+        "Type": "package",
+        "Version": "0.3.3",
+        "Depends": "R (>= 3.2)",
+        "Suggests": "roxygen2, testthat (>= 3.0.0), covr, withr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "httr,\njsonlite": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "httr,\njsonlite",
+        "Type": "package"
+      }
+    },
+    "uuid": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "uuid",
+        "Type": "package",
+        "Version": "1.2-1",
+        "Depends": "R (>= 2.9.0)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "haven": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "haven",
+        "Type": "package",
+        "Version": "2.5.4",
+        "Depends": "R (>= 3.6)",
+        "Imports": "cli (>= 3.0.0), forcats (>= 0.2.0), hms, lifecycle, methods,\nreadr (>= 0.1.0), rlang (>= 0.4.0), tibble, tidyselect, vctrs\n(>= 0.3.0)",
+        "Suggests": "covr, crayon, fs, knitr, pillar (>= 1.4.0), rmarkdown,\ntestthat (>= 3.0.0), utf8",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "forcats": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "forcats",
+        "Type": "package",
+        "Version": "1.0.0",
+        "Depends": "R (>= 3.4)",
+        "Imports": "cli (>= 3.4.0), glue, lifecycle, magrittr, rlang (>= 1.0.0),\ntibble",
+        "Suggests": "covr, dplyr, ggplot2, knitr, readr, rmarkdown, testthat (>=\n3.0.0), withr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "hms": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "hms",
+        "Type": "package",
+        "Version": "1.1.3",
+        "Imports": "lifecycle, methods, pkgconfig, rlang (>= 1.0.2), vctrs (>=\n0.3.8)",
+        "Suggests": "crayon, lubridate, pillar (>= 1.1.0), testthat (>= 3.0.0)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "methods,\nreadr": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "methods,\nreadr",
+        "Type": "package"
+      }
+    },
+    "lubridate": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "lubridate",
+        "Type": "package",
+        "Version": "1.9.3",
+        "Depends": "methods, R (>= 3.2)",
+        "Imports": "generics, timechange (>= 0.1.1)",
+        "Suggests": "covr, knitr, rmarkdown, testthat (>= 2.1.0), vctrs (>= 0.5.0)",
+        "License": "GPL (>= 2)",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "timechange": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "timechange",
+        "Type": "package",
+        "Version": "0.3.0",
+        "Depends": "R (>= 3.3)",
+        "Suggests": "testthat (>= 0.7.1.99), knitr",
+        "License": "GPL (>= 3)",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "modelr": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "modelr",
+        "Type": "package",
+        "Version": "0.1.11",
+        "Depends": "R (>= 3.2)",
+        "Imports": "broom, magrittr, purrr (>= 0.2.2), rlang (>= 1.0.6), tibble,\ntidyr (>= 0.8.0), tidyselect, vctrs",
+        "Suggests": "compiler, covr, ggplot2, testthat (>= 3.0.0)",
+        "License": "GPL-3",
+        "NeedsCompilation": "no"
+      }
+    },
+    "tibble,\ntidyr": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "tibble,\ntidyr",
+        "Type": "package"
+      }
+    },
+    "ragg": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "ragg",
+        "Type": "package",
+        "Version": "1.3.3",
+        "Imports": "systemfonts (>= 1.0.3), textshaping (>= 0.3.0)",
+        "Suggests": "covr, graphics, grid, testthat (>= 3.0.0)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "systemfonts": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "systemfonts",
+        "Type": "package",
+        "Version": "1.1.0",
+        "Depends": "R (>= 3.2.0)",
+        "Imports": "lifecycle",
+        "Suggests": "covr, knitr, rmarkdown, testthat (>= 2.1.0), tools",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "textshaping": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "textshaping",
+        "Type": "package",
+        "Version": "0.4.0",
+        "Depends": "R (>= 3.2.0)",
+        "Imports": "lifecycle, systemfonts (>= 1.1.0)",
+        "Suggests": "covr, knitr, rmarkdown",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "readr": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "readr",
+        "Type": "package",
+        "Version": "2.1.5",
+        "Depends": "R (>= 3.6)",
+        "Imports": "cli (>= 3.2.0), clipr, crayon, hms (>= 0.4.1), lifecycle (>=\n0.2.0), methods, R6, rlang, tibble, utils, vroom (>= 1.6.0)",
+        "Suggests": "covr, curl, datasets, knitr, rmarkdown, spelling, stringi,\ntestthat (>= 3.2.0), tzdb (>= 0.1.1), waldo, withr, xml2",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "clipr": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "clipr",
+        "Type": "package",
+        "Version": "0.8.0",
+        "Imports": "utils",
+        "Suggests": "covr, knitr, rmarkdown, rstudioapi (>= 0.5), testthat (>=\n2.0.0)",
+        "License": "GPL-3",
+        "NeedsCompilation": "no"
+      }
+    },
+    "crayon": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "crayon",
+        "Type": "package",
+        "Version": "1.5.3",
+        "Imports": "grDevices, methods, utils",
+        "Suggests": "mockery, rstudioapi, testthat, withr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "vroom": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "vroom",
+        "Type": "package",
+        "Version": "1.6.5",
+        "Depends": "R (>= 3.6)",
+        "Imports": "bit64, cli (>= 3.2.0), crayon, glue, hms, lifecycle (>=\n1.0.3), methods, rlang (>= 0.4.2), stats, tibble (>= 2.0.0),\ntidyselect, tzdb (>= 0.1.1), vctrs (>= 0.2.0), withr",
+        "Suggests": "archive, bench (>= 1.1.0), covr, curl, dplyr, forcats, fs,\nggplot2, knitr, patchwork, prettyunits, purrr, rmarkdown,\nrstudioapi, scales, spelling, testthat (>= 2.1.0), tidyr,\nutils, waldo, xml2",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "bit64": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "bit64",
+        "Type": "package",
+        "Version": "4.5.2",
+        "Depends": "R (>= 3.0.1), bit (>= 4.0.0), utils, methods, stats",
+        "License": "GPL-2 | GPL-3",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "bit": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "bit",
+        "Type": "package",
+        "Version": "4.5.0",
+        "Depends": "R (>= 3.4.0)",
+        "Suggests": "testthat (>= 0.11.0), roxygen2, knitr, markdown, rmarkdown,\nmicrobenchmark, bit64 (>= 4.0.0), ff (>= 4.0.0)",
+        "License": "GPL-2 | GPL-3",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "tzdb": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "tzdb",
+        "Type": "package",
+        "Version": "0.4.0",
+        "Depends": "R (>= 3.5.0)",
+        "Suggests": "covr, testthat (>= 3.0.0)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "readxl": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "readxl",
+        "Type": "package",
+        "Version": "1.4.3",
+        "Depends": "R (>= 3.6)",
+        "Imports": "cellranger, tibble (>= 2.0.1), utils",
+        "Suggests": "covr, knitr, rmarkdown, testthat (>= 3.1.6), withr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "cellranger": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "cellranger",
+        "Type": "package",
+        "Version": "1.1.0",
+        "Depends": "R (>= 3.0.0)",
+        "Imports": "rematch, tibble",
+        "Suggests": "covr, testthat (>= 1.0.0), knitr, rmarkdown",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "rematch": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "rematch",
+        "Type": "package",
+        "Version": "2.0.0",
+        "Suggests": "covr, testthat",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "reprex": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "reprex",
+        "Type": "package",
+        "Version": "2.1.1",
+        "Depends": "R (>= 3.6)",
+        "Imports": "callr (>= 3.6.0), cli (>= 3.2.0), clipr (>= 0.4.0), fs, glue,\nknitr (>= 1.23), lifecycle, rlang (>= 1.0.0), rmarkdown,\nrstudioapi, utils, withr (>= 2.3.0)",
+        "Suggests": "covr, fortunes, miniUI, rprojroot, sessioninfo, shiny,\nspelling, styler (>= 1.2.0), testthat (>= 3.2.1)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "callr": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "callr",
+        "Type": "package",
+        "Version": "3.7.6",
+        "Depends": "R (>= 3.4)",
+        "Imports": "processx (>= 3.6.1), R6, utils",
+        "Suggests": "asciicast (>= 2.3.1), cli (>= 1.1.0), mockery, ps, rprojroot,\nspelling, testthat (>= 3.2.0), withr (>= 2.3.0)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "processx": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "processx",
+        "Type": "package",
+        "Version": "3.8.4",
+        "Depends": "R (>= 3.4.0)",
+        "Imports": "ps (>= 1.2.0), R6, utils",
+        "Suggests": "callr (>= 3.7.3), cli (>= 3.3.0), codetools, covr, curl,\ndebugme, parallel, rlang (>= 1.0.2), testthat (>= 3.0.0),\nwebfakes, withr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "ps": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "ps",
+        "Type": "package",
+        "Version": "1.8.1",
+        "Depends": "R (>= 3.4)",
+        "Imports": "utils",
+        "Suggests": "callr, covr, curl, pillar, pingr, processx (>= 3.1.0), R6,\nrlang, testthat (>= 3.0.0), webfakes, withr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "glue,\nknitr": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "glue,\nknitr",
+        "Type": "package"
+      }
+    },
+    "rmarkdown,\nrstudioapi": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "rmarkdown,\nrstudioapi",
+        "Type": "package"
+      }
+    },
+    "rstudioapi": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "rstudioapi",
+        "Type": "package",
+        "Version": "0.17.1",
+        "Suggests": "testthat, knitr, rmarkdown, clipr, covr",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "rvest": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "rvest",
+        "Type": "package",
+        "Version": "1.0.4",
+        "Depends": "R (>= 3.6)",
+        "Imports": "cli, glue, httr (>= 0.5), lifecycle (>= 1.0.3), magrittr,\nrlang (>= 1.1.0), selectr, tibble, xml2 (>= 1.3)",
+        "Suggests": "chromote, covr, knitr, R6, readr, repurrrsive, rmarkdown,\nspelling, stringi (>= 0.3.1), testthat (>= 3.0.2), webfakes",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "magrittr,\nrlang": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "magrittr,\nrlang",
+        "Type": "package"
+      }
+    },
+    "selectr": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "selectr",
+        "Type": "package",
+        "Version": "0.4-2",
+        "Depends": "R (>= 3.0)",
+        "Imports": "methods, stringr, R6",
+        "Suggests": "testthat, XML, xml2",
+        "License": "BSD_3_clause + file LICENCE",
+        "NeedsCompilation": "no"
+      }
+    },
+    "xml2": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "xml2",
+        "Type": "package",
+        "Version": "1.3.6",
+        "Depends": "R (>= 3.6.0)",
+        "Imports": "cli, methods, rlang (>= 1.1.0)",
+        "Suggests": "covr, curl, httr, knitr, magrittr, mockery, rmarkdown,\ntestthat (>= 3.0.0)",
+        "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    }
+  },
+  "files": {
+    "app.R": {
+      "checksum": "0000000000000000000000000000000"
+    }
+  },
+  "users": null
+}
