@@ -10,11 +10,11 @@
     "has_parameters": false
   },
   "packages": {
-    "tidyvers": {
+    "tidyverse": {
       "Source": "CRAN",
       "Repository": "http://rspm/default/latest",
       "description": {
-        "Package": "tidyvers",
+        "Package": "tidyverse",
         "Type": "package",
         "Version": "2.0.0",
         "Depends": "R (>= 3.3)",
