@@ -332,8 +332,8 @@
       "description": {
         "Package": "cpp11",
         "Type": "package",
-        "Version": "0.5.0",
-        "Depends": "R (>= 3.6.0)",
+        "Version": "0.5.1",
+        "Depends": "R (>= 4.0.0)",
         "Suggests": "bench, brio, callr, cli, covr, decor, desc, ggplot2, glue,\nknitr, lobstr, mockery, progress, rmarkdown, scales, Rcpp,\ntestthat (>= 3.2.0), tibble, utils, vctrs, withr",
         "License": "MIT + file LICENSE",
         "NeedsCompilation": "no"
@@ -451,7 +451,7 @@
       "description": {
         "Package": "data.table",
         "Type": "package",
-        "Version": "1.16.2",
+        "Version": "1.16.4",
         "Depends": "R (>= 3.3.0)",
         "Imports": "methods",
         "Suggests": "bit64 (>= 4.0.0), bit (>= 4.0.4), R.utils, xts, zoo (>=\n1.8-1), yaml, knitr, markdown",
@@ -999,7 +999,7 @@
       "description": {
         "Package": "bit",
         "Type": "package",
-        "Version": "4.5.0",
+        "Version": "4.5.0.1",
         "Depends": "R (>= 3.4.0)",
         "Suggests": "testthat (>= 0.11.0), roxygen2, knitr, markdown, rmarkdown,\nmicrobenchmark, bit64 (>= 4.0.0), ff (>= 4.0.0)",
         "License": "GPL-2 | GPL-3",
@@ -1053,7 +1053,7 @@
       "description": {
         "Package": "lubridate",
         "Type": "package",
-        "Version": "1.9.2",
+        "Version": "1.9.3",
         "Depends": "methods, R (>= 3.2)",
         "Imports": "generics, timechange (>= 0.1.1)",
         "Suggests": "covr, knitr, rmarkdown, testthat (>= 2.1.0), vctrs (>= 0.5.0)",
@@ -1124,7 +1124,7 @@
       "description": {
         "Package": "textshaping",
         "Type": "package",
-        "Version": "0.4.0",
+        "Version": "0.4.1",
         "Depends": "R (>= 3.2.0)",
         "Imports": "lifecycle, systemfonts (>= 1.1.0)",
         "LinkingTo": "cpp11 (>= 0.2.1), systemfonts (>= 1.0.0)",
@@ -1481,10 +1481,10 @@
       "description": {
         "Package": "later",
         "Type": "package",
-        "Version": "1.3.2",
+        "Version": "1.4.1",
         "Imports": "Rcpp (>= 0.12.9), rlang",
         "LinkingTo": "Rcpp",
-        "Suggests": "knitr, rmarkdown, testthat (>= 2.1.0)",
+        "Suggests": "knitr, nanonext, R6, rmarkdown, testthat (>= 2.1.0)",
         "License": "MIT + file LICENSE",
         "NeedsCompilation": "yes"
       }
@@ -1508,7 +1508,7 @@
       "description": {
         "Package": "promises",
         "Type": "package",
-        "Version": "1.3.0",
+        "Version": "1.3.2",
         "Imports": "fastmap (>= 1.1.0), later, magrittr (>= 1.5), R6, Rcpp, rlang,\nstats",
         "LinkingTo": "later, Rcpp",
         "Suggests": "future (>= 1.21.0), knitr, purrr, rmarkdown, spelling,\ntestthat, vembedr",
