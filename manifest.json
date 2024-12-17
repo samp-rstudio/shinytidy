@@ -774,7 +774,7 @@
       "description": {
         "Package": "openssl",
         "Type": "package",
-        "Version": "2.2.2",
+        "Version": "2.3.0",
         "Imports": "askpass",
         "Suggests": "curl, testthat (>= 2.1.0), digest, knitr, rmarkdown,\njsonlite, jose, sodium",
         "License": "MIT + file LICENSE",
