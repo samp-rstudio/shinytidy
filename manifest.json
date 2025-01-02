@@ -153,25 +153,11 @@
       "description": {
         "Package": "pillar",
         "Type": "package",
-        "Version": "1.9.0",
-        "Imports": "cli (>= 2.3.0), fansi, glue, lifecycle, rlang (>= 1.0.2), utf8\n(>= 1.1.0), utils, vctrs (>= 0.5.0)",
+        "Version": "1.10.0",
+        "Imports": "cli (>= 2.3.0), glue, lifecycle, rlang (>= 1.0.2), utf8 (>=\n1.1.0), utils, vctrs (>= 0.5.0)",
         "Suggests": "bit64, DBI, debugme, DiagrammeR, dplyr, formattable, ggplot2,\nknitr, lubridate, nanotime, nycflights13, palmerpenguins,\nrmarkdown, scales, stringi, survival, testthat (>= 3.1.1),\ntibble, units (>= 0.7.2), vdiffr, withr",
         "License": "MIT + file LICENSE",
         "NeedsCompilation": "no"
-      }
-    },
-    "fansi": {
-      "Source": "CRAN",
-      "Repository": "http://rspm/default/latest",
-      "description": {
-        "Package": "fansi",
-        "Type": "package",
-        "Version": "1.0.6",
-        "Depends": "R (>= 3.1.0)",
-        "Imports": "grDevices, utils",
-        "Suggests": "unitizer, knitr, rmarkdown",
-        "License": "GPL-2 | GPL-3",
-        "NeedsCompilation": "yes"
       }
     },
     "utf8": {
@@ -225,6 +211,20 @@
         "Imports": "fansi (>= 0.4.0), lifecycle (>= 1.0.0), magrittr, methods,\npillar (>= 1.8.1), pkgconfig, rlang (>= 1.0.2), utils, vctrs\n(>= 0.4.2)",
         "Suggests": "bench, bit64, blob, brio, callr, cli, covr, crayon (>=\n1.3.4), DiagrammeR, dplyr, evaluate, formattable, ggplot2,\nhere, hms, htmltools, knitr, lubridate, mockr, nycflights13,\npkgbuild, pkgload, purrr, rmarkdown, stringi, testthat (>=\n3.0.2), tidyr, withr",
         "License": "MIT + file LICENSE",
+        "NeedsCompilation": "yes"
+      }
+    },
+    "fansi": {
+      "Source": "CRAN",
+      "Repository": "http://rspm/default/latest",
+      "description": {
+        "Package": "fansi",
+        "Type": "package",
+        "Version": "1.0.6",
+        "Depends": "R (>= 3.1.0)",
+        "Imports": "grDevices, utils",
+        "Suggests": "unitizer, knitr, rmarkdown",
+        "License": "GPL-2 | GPL-3",
         "NeedsCompilation": "yes"
       }
     },
@@ -520,7 +520,7 @@
       "description": {
         "Package": "MASS",
         "Type": "package",
-        "Version": "7.3-61",
+        "Version": "7.3-63",
         "Depends": "R (>= 4.4.0), grDevices, graphics, stats, utils",
         "Imports": "methods",
         "Suggests": "lattice, nlme, nnet, survival",
